@@ -1,6 +1,6 @@
 import Item from "./Item";
 
-function CitiesList() {
+function CitiesList({cities}) {
     return (
         <>
         <div>
@@ -8,9 +8,14 @@ function CitiesList() {
             <button type="submit">Changer le format</button>
         </div>
         <div>
-            <Item />
-            <Item />
-            <Item />
+        {cities.map((city) => (
+                <Item
+                    key={city.code}
+                    cityName={city.nom}
+                    zipCode={city.codesPostaux[0]}
+                    department={city.codeDepartement}
+                    population={city.population} />
+            ))}
         </div>
         </>
     )

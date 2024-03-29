@@ -1,11 +1,11 @@
-function City() {
+function City({cityName, zipCode, department, population}) {
 
     return (
         <>
             <ul>
-                <li>Nom de la ville</li>
-                <li>Code postal - XXXXXX</li>
-                <li>Population : 123456</li>
+            <li className="itemCityName">{cityName}<span className='itemSubCat'> - {department}</span></li>
+                <li className="itemCategory">Code Postal :<span className='itemSubCat'> {zipCode}</span></li>
+                <li className="itemCategory">Population : <span className='itemSubCat'></span></li>
             </ul >
 
         </>
