@@ -5,7 +5,7 @@ function City({cityName, zipCode, department, population}) {
             <ul>
             <li className="itemCityName">{cityName}<span className='itemSubCat'> - {department}</span></li>
                 <li className="itemCategory">Code Postal :<span className='itemSubCat'> {zipCode}</span></li>
-                <li className="itemCategory">Population : <span className='itemSubCat'></span></li>
+                <li className="itemCategory">Population : <span className='itemSubCat'>{population}</span></li>
             </ul >
 
         </>
