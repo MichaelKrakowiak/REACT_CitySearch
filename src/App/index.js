@@ -1,6 +1,7 @@
 import Search from "./Components/FindCity/Search";
 import CitiesList from "./Components/FindCity/CitiesList";
 import { useEffect, useState } from 'react';
+import './style.scss';
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
 
     return (
         <main>
-            <h1>Recherche par nom de commune</h1>
+            <h1 className="app_mainTitle">Trouve ta ville !</h1>
+            <h2 className="app_title">Recherche par nom de commune ou code-postal</h2>
             <Search/>
             <CitiesList cities={cities}/>
         </main>
@@ -34,4 +36,4 @@ function App() {
 };
 
 
-export default App;
+export default App; 
