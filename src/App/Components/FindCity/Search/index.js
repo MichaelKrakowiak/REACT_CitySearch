@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import './style.scss';
+
+
 function Search({ setSearch }) {
 
     const [value, setValue] = useState('Marcy');
@@ -30,18 +33,17 @@ function Search({ setSearch }) {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="search_form">
                 <label>
-                    <span>Nom de la commune</span>
                     <input
                         placeholder="Lyon, Paris, Strasbourg, ..."
                         type="search"
-                        className='searchBar'
+                        className='search_bar'
                         onChange={handleChange}
                         value={value}
                     />
                 </label>
-                <button type="submit">Lancer la recherche</button>
+                <button type="submit" className="search_button">Chercher</button>
             </form>
 
         </>
