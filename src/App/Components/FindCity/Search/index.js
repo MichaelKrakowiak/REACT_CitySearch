@@ -2,9 +2,7 @@ import { useState } from "react";
 
 function Search({ setSearch }) {
 
-    const [value, setValue] = useState('');
-
-    console.log(isNaN(value));
+    const [value, setValue] = useState('Marcy');
 
     const handleSubmit = (event) => {
         event.preventDefault();

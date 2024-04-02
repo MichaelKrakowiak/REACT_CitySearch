@@ -6,7 +6,7 @@ import './style.scss';
 function App() {
 
     const [cities, setCities] = useState([]);
-    const [search, setSearch] = useState('Marcy');
+    const [search, setSearch] = useState('communes?nom=$Marcy');
 
 
     const fetchCities = async () => {
@@ -14,8 +14,6 @@ function App() {
                 const response = await fetch('https://geo.api.gouv.fr/' + search);
                 const data = await response.json();
                 setCities(data);
-
-                console.log(data)
 
             } catch (error) {
                 alert('Erreur lors de la récupération des données.');
