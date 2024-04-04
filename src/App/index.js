@@ -28,7 +28,9 @@ function App() {
     return (
         <main>
             <h1 className="app_mainTitle">Trouve ta ville !</h1>
-            <h2 className="app_title">Recherche par nom de commune (1 lettre minimum), code-postal (5 chiffres obligatoires) ou département (2 chiffres obligatoires) </h2>
+            <p className="app_title">Recherche par nom de commune (1 lettre minimum),</p>
+            <p className="app_title">Recherche par code-postal (5 chiffres obligatoires),</p>
+            <p className="app_title">Recherche par département (2 chiffres obligatoires pour la France Métropolitaine ou 3 chiffres obligatoires pour l'Outre-Mer) </p>
             <Search setSearch={setSearch} />
             <CitiesList cities={cities} />
         </main>

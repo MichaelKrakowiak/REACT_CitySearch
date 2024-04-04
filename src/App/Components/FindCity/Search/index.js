@@ -13,7 +13,7 @@ function Search({ setSearch }) {
             if (isNaN(value)) {
                 setSearch(`communes?nom=${value}`)
             } else {
-                if(value.length === 2){
+                if(value.length <=3){
                     setSearch(`departements/${value}/communes`)
                 } else if (value.length === 5){
                     setSearch(`communes?codePostal=${value}`)

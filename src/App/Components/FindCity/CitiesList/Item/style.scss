@@ -1,0 +1,40 @@
+.city_item {
+    display: flex;
+    align-items: center;
+    border: #7C80FC solid 1px;
+    border-radius: 5px;
+    background-color: #EBE3F5;
+    margin-bottom: 0.3rem;
+    height: 30px;
+    width: 100%;
+}
+
+.city_item>li {
+    width: calc(100% / 3);
+}
+
+li:first-child {
+    padding-left: 0.3rem;
+}
+
+li:last-child {
+    text-align: right;
+    padding-right: 0.3rem;
+}
+
+.city_name {
+    font-weight: bold;
+}
+
+.city_zipCode {
+    text-align: center;
+}
+
+.city_zipCode, .city_number {
+    color: grey;
+}
+
+.city_subCat {
+    font-weight: normal;
+    color: black
+}
