@@ -36,7 +36,7 @@ function Search({ setSearch }) {
             <form onSubmit={handleSubmit} className="search_form">
                 <label>
                     <input
-                        placeholder="Lyon, Paris, Strasbourg, ..."
+                        placeholder="Lyon, 69, 69001, ..."
                         type="search"
                         className='search_bar'
                         onChange={handleChange}
